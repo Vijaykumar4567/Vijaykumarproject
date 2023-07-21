@@ -60,6 +60,8 @@ namespace Vijaykumarproject
             }
         }
 
+        [DllImport("User32.dll", SetLastError = true)]
+        public static extern IntPtr SetFocus(IntPtr hWnd);
 
         [DllImport("User32.dll", CharSet = CharSet.Auto)]
         public static extern bool CreateCaret(IntPtr hWnd, IntPtr hBitmap, int nWidth, int nHeight);

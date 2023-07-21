@@ -16,8 +16,12 @@ namespace Vijaykumarproject
         public Form1()
         {
             InitializeComponent();
+           
+            caretbycastorixsir.SetFocus(this.Handle);
+           
             cs = new caretbycastorixsir();
             cs.InstallHook();
+           
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -26,6 +30,12 @@ namespace Vijaykumarproject
             {
                 caretbycastorixsir.RemoveWindowSubclass(hWndEdit, cs.SubClassDelegate, 0);
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           
+            this.ActiveControl = textBox1;
         }
     }
 }
