@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Vijaykumarproject.firstlevelmaster;
+using Vijaykumarproject.childforms;
 
 namespace Vijaykumarproject
 {
@@ -17,7 +18,7 @@ namespace Vijaykumarproject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mainmaster());
+            Application.Run(new balancesheet ());
         }
     }
 }

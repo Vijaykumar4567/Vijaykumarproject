@@ -23,7 +23,6 @@ namespace Vijaykumarproject.supercontrols
             this.BorderStyle = BorderStyle.None;
             this.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             this.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            this.CellBorderStyle = DataGridViewCellBorderStyle.None;
             this.RowHeadersVisible = false;
 
             InitializeComponent();
@@ -35,7 +34,7 @@ namespace Vijaykumarproject.supercontrols
         }
 
 
-       // remove border completely between devision of column headers : working
+        // remove border completely between devision of column headers : working
         protected override void OnCellPainting(DataGridViewCellPaintingEventArgs e)
         {
             if (e.RowIndex == -1 && e.ColumnIndex > -1)
